@@ -15,7 +15,7 @@ require_once($root . '/wp-includes/registration.php');
 
 if (!class_exists('Facebook')) {
   // prevent fatal due to multiple inclusions.
-  require_once('facebook-client/facebook.php');
+  require_once('facebook-platform/php/facebook.php');
 }
 
 function _fbc_make_client() {
