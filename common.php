@@ -96,7 +96,7 @@ function render_fbconnect_button($onlogin=null) {
   }
   return <<<EOF
 <div class="dark">
-  <fb:login-button size="large" background="white" length="short" $onlogin_str>
+  <fb:login-button size="large" background="white" length="long" $onlogin_str>
   </fb:login-button>
 </div>
 EOF;

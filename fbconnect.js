@@ -70,6 +70,11 @@ var FBConnect = {
       return;
     }
 
+    var elem = comment_form.getElementsByTagName("a")[1];
+    elem.setAttribute("href","#");
+    elem.setAttribute("onclick", "FBConnect.logout(); return false");
+    return;
+    
     var orig_submit = ge('submit');
     if (orig_submit && orig_submit.getAttribute('name') === 'submit') {
       /* This is a bit of a hack. The default theme gives the submit
