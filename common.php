@@ -81,7 +81,7 @@ function fbc_make_public_url($userinfo) {
 
 function render_fb_profile_pic($user) {
   return <<<EOF
-    <div class="avatar avatar-32">
+    <div class="avatar avatar-50">
     <fb:profile-pic uid="$user" facebook-logo="true" size="square"></fb:profile-pic>
     </div>
 EOF;
