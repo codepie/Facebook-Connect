@@ -164,7 +164,7 @@ function fbc_userinfo_to_wp_user($userinfo) {
   return array(
     'display_name' => fbc_get_displayname($userinfo),
     'user_url' => fbc_make_public_url($userinfo),
-    'user_email' => $userinfo['proxied_email'],
+//    'user_email' => $userinfo['proxied_email'],
     'first_name' => $userinfo['first_name'],
     'last_name' => $userinfo['last_name'],
   );
