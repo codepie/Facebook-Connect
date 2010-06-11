@@ -18,10 +18,10 @@
 
 /*
 Plugin Name: Facebook Connect
-Author: Adam Hupp
+Author: Adam Hupp, Tuan-Anh Hoang-Vu
 Author URI: http://hupp.org/adam/
 Description: Integrate Facebook and Wordpress with Facebook Connect.  Provides single-signon, avatars, and newsfeed comment publication.  Requires a <a href="http://www.facebook.com/developers/">Facebook API Key</a> for use.
-Version: 1.0
+Version: 1.1
 
 */
 
@@ -524,7 +524,7 @@ function fbc_display_login_button($hidden=false) {
   $button = render_fbconnect_button();
   echo <<<EOF
 <div class="fbc_hide_on_login fbc_connect_button_area" $visibility  id="fbc_login">
-<span><small>Connect with your Facebook Account</small></span> <br/> $button
+    $button
 </div>
 
 EOF;
